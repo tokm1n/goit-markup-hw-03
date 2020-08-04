@@ -237,6 +237,25 @@ body {
 /* Стили для Portfolio */
 /* Фильтр */
 
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 0px;
+  padding-bottom: 94px;
+}
+
+.project-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+  }
+
+.project-item {
+  width: 370px;
+}
+
+.projects-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
 .btn-filtr {
   font-family: Roboto;
   font-weight: 500;
@@ -246,10 +265,16 @@ body {
   letter-spacing: 0.03em;
   color: #212121;
 }
+
 .btn .btn-filtr:hover,
 :focus {
   background: #2196f3;
   color: white;
+}
+
+.btn {
+  display: block;
+  align-items: center;
 }
 /* Проеткы */
 .project-link {
@@ -271,6 +296,18 @@ body {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+
+.filtr {
+  display: flex;
+  padding-top: 93px;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+.filtr-li:not(:last-child) {
+  margin-right: 8px;
+} {
+
 }
 
 .footer {
