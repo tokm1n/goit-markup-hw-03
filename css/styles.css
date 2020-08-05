@@ -44,6 +44,10 @@ body {
   padding: 94px 0;
 }
 
+address {
+  font-style: normal;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -202,6 +206,12 @@ ul {
   font-style: normal;
   color: #212121;
 }
+
+.section-features {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
 .section-work,
 .section-team,
 .section-client {
@@ -213,6 +223,12 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+.section-team, 
+.section-client {
+  margin: 0px;
+  padding: 0 0 50px;
 }
 
 .section-work {
@@ -247,6 +263,11 @@ ul {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+
+.section-text {
+  margin: 0px;
+}
+
 
 .features-item {
   display: flex;
