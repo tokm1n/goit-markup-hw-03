@@ -64,6 +64,7 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  text-decoration: none;
 }
 
 .flexbox {
@@ -73,6 +74,11 @@ ul {
 }
 
 /* Логотип */
+
+.logo {
+  text-decoration: none;
+}
+
 .logoweb {
   color: var(--accent-color);
   font-family: "Raleway", sans-serif;
@@ -102,7 +108,7 @@ ul {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  }
+}
 
 /* Навигацыя */
 .menu-nav {
@@ -135,13 +141,18 @@ ul {
 }
 
 .link {
-  color: color: var(--title-text-color);
+  color: var(--title-text-color);
   text-decoration: none;
 }
 
 .link:hover,
 :focus {
-  color: #2196F3;
+  background: #2196f3;
+  color: var(--title-text-color);
+}
+
+.active {
+  color: #2196f3;
 }
 
 /* Контакты */
@@ -165,7 +176,7 @@ ul {
 
 .linki:hover,
 :focus {
-  color: #2196F3;
+  color: #2196f3;
 }
 
 /* Стили для Studio */
@@ -173,6 +184,13 @@ ul {
 
 .main {
   margin-top: auto;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 .hero-title {
@@ -186,13 +204,25 @@ ul {
   margin: 0px;
 }
 
+.hero-title {
+  padding-bottom: 30px;
+}
+
 .hero-link {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
+  color: #ffffff;
+}
+
+.hero-link {
+  padding: 10 32px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  text-decoration: none;
 }
 
 /* section */
@@ -225,10 +255,28 @@ ul {
   color: #212121;
 }
 
-.section-team, 
+.section-team,
 .section-client {
   margin: 0px;
   padding: 0 0 50px;
+}
+
+.customers {
+  display: flex;
+}
+
+.client {
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0px;
+  margin: 0px;
+  width: 170px;
+  height: 90px;
+}
+
+.client:last-child {
+  margin-right: 30px;
 }
 
 .section-work {
@@ -241,7 +289,7 @@ ul {
 }
 
 .team {
-  background: #F5F4FA;
+  background: #f5f4fa;
 }
 
 .section-title {
@@ -268,15 +316,38 @@ ul {
   margin: 0px;
 }
 
-
 .features-item {
   display: flex;
   align-items: center;
 }
 
+.icon {
+  display: flex;
+  justify-content: center;
+}
+
 .features-li:not(:last-child) {
   margin-right: 30px;
   align-items: center;
+}
+
+.features-li {
+  background-color: var(--white-color);
+}
+
+.section-title {
+  display: flex;
+  justify-content: center;
+}
+
+.section-text {
+  display: flex;
+  justify-content: center;
+}
+
+.fon {
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 
 .work {
@@ -295,7 +366,7 @@ ul {
 
 .project-item:not(:nth-child(3n)) {
   margin-right: 30px;
-  }
+}
 
 .project-item {
   width: 370px;
@@ -356,10 +427,10 @@ ul {
 
 .filtr-li:not(:last-child) {
   margin-right: 8px;
-} 
+}
 
 .footer {
-  background: #2F303A;;
+  background: #2f303a;
 }
 
 /* Дополнительня информация */
@@ -371,7 +442,6 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
-  
 }
 .info-mail {
   font-family: "Roboto", sans-serif;
@@ -381,7 +451,6 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  
 }
 .info-tel {
   font-family: "Roboto", sans-serif;
@@ -391,5 +460,19 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  
+}
+
+.mailing {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.comon {
+  display: flex;
 }
