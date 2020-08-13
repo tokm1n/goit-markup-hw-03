@@ -146,9 +146,8 @@ ul {
 }
 
 .link:hover,
-:focus {
-  background: #2196f3;
-  color: var(--title-text-color);
+.link:focus {
+  color: #2196f3;
 }
 
 .active {
@@ -387,7 +386,7 @@ ul {
 }
 
 .btn .btn-filtr:hover,
-:focus {
+.btn .btn-filtr:focus {
   background: #2196f3;
   color: white;
 }
